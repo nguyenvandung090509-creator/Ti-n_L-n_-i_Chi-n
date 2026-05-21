@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiến Lên Miền Nam</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game">
+    <header>
+      <h1>🂡 Tiến Lên Miền Nam</h1>
+      <p>Chọn bài trong tay bạn rồi bấm <strong>Đánh bài</strong>. Mục tiêu là hết bài trước 3 máy.</p>
+    </header>
+
+    <section class="status-panel">
+      <div><strong>Lượt hiện tại:</strong> <span id="current-player"></span></div>
+      <div><strong>Bàn đang có:</strong> <span id="table-play">(trống)</span></div>
+      <div><strong>Thông báo:</strong> <span id="message">Bắt đầu ván mới!</span></div>
+    </section>
+
+    <section class="players" id="players"></section>
+
+    <section class="your-hand-section">
+      <h2>Bài của bạn</h2>
+      <div id="hand" class="hand"></div>
+      <div class="actions">
+        <button id="play-btn">Đánh bài</button>
+        <button id="pass-btn">Bỏ lượt</button>
+        <button id="new-game-btn">Ván mới</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
